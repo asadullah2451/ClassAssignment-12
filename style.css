@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.fullwebsite{
+    width: 1000px;
+    margin: auto;
+}
+/* ===============
+    Menu strat
+=============== */
+.header{
+    text-align: center;
+    width: inherit;
+    background: #000;
+}
+.header ul{
+    display: inline-block;
+}
+.header ul li{
+    display: inline-block;
+    position: relative;
+}
+.header ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(199, 199, 199);
+    background: #000;
+    margin-left: -4px;
+    padding: 40px;
+}
+.header ul li:hover > a{
+    color: white;
+    background: rgb(19, 19, 19);
+}
+/* ====================
+    Submenu-1
+==================== */
+.header ul li ul{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 98px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+.header ul li ul li{
+    display: block;
+    position: relative;
+}
+.header ul li ul li a{
+    display: inline-block;
+    background: #000;
+    padding: 10px 70px;
+    border-bottom: .5px solid rgb(95, 95, 95);
+    width: 60px;
+}
+.header ul li ul li:first-child a{
+    border-top: 5px solid #3C73E1;
+   
+}
+.header ul li ul li a:hover{
+    background: #3C73E1;
+}
+.header ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+/*===================
+     Submenu-2 
+====================*/
+.drop_2 li{
+    position: absolute;
+    left: 200px;
+    bottom: 98px;
+}
+/* =================
+    Banner section
+================= */
+.banner{
+    height: 550px;
+    background: url(./photo-jpg.jpg);
+    text-align: center;
+}
+.banner h1{
+    display: inline-block;
+    background: rgba(255, 255, 255, 50%);
+    margin: 200px 0 20px 0;
+    padding: 15px 20px;
+    border-radius: 20px;
+    border: 3px solid white;
+}
+.banner p{
+    background: rgba(255, 255, 255, 80%);
+    font-size: 25px;
+    width: 800px;
+    text-align: center;
+    margin: auto;
+}
+.banner a{
+    display: inline-block;
+    color: white;
+    background: rgba(255, 0, 0, 50%);
+    border: 3px solid red;
+    padding: 10px 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: .5s;
+}
+.banner a:hover{
+    background: white;
+    color: black;
+}
+/* =================
+  Container Srate
+================= */
+.container_1{
+    text-align: center;
+    margin-top: 30px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    padding: 16px;
+}
+.container_1 ul{
+   list-style-position: outside;
+}
+.container_1 ul li{
+    margin: 30px 30px;
+}
+.container_2{
+    text-align: center;
+    margin-top: 30px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    padding: 16px;
+}
+.container_2 ul{
+   list-style-position: inside;
+}
+.container_2 ul li{
+    margin: 30px 30px;
+}
+.email_box{
+    background: #F2F2F2;
+    text-align: center;
+    height: 100px;
+    margin: 60px 0;
+    line-height: 100px;
+}
+.email_box input:first-child{
+    border: none;
+    border-bottom: 1px solid red;
+    width: 400px;
+    height: 34px;
+    padding-left: 10px;
+    transition: .5s;
+}
+.email_box input:last-child{
+    margin-left: -4px;
+    color: white;
+    background: red;
+    border: none;
+    width: 120px;
+    height: 36px;
+    transition: .5s;
+}
+.email_box input:last-child:hover{
+    color: black;
+    background: white;
+    border: 1px solid red;
+}
+.email_box:hover .email{
+    border: 1px solid red;
+    border-right: none;
+}
+/* ======================
+        list box
+======================== */
+.list_type{
+    height: 200px;
+    text-align: center;
+}
+.list_box_1{
+    display: inline-block;
+    margin: 20px 30px;
+}
+.list_box_1 ol{
+    list-style-type: lower-roman;
+    list-style-position: inside;
+}
+.list_box_2{
+    display: inline-block;
+    margin: 20px 30px;
+}
+.list_box_2 ul{
+    list-style-type: square;
+    list-style-position: inside;
+}
+.list_box_3{
+    display: inline-block;
+    margin: 20px 30px;
+    list-style-type: lower-greek;
+}
+.list_box_3 ol{
+    list-style-type: lower-greek;
+    list-style-position: inside;
+}
+/* ======================
+    footer section
+====================== */
+.footer{
+    text-align: center;
+    height: 150px;
+    background: black;
+}
+.footer h4{
+    color: white;
+    margin-top: 20px;
+    display: inline-block;
+}
+.footer ul{
+    line-height: 110px;
+}
+.footer ul li{
+    display: inline-block;
+}
+.footer ul li a{
+    color: black;
+    background: #5EA5FA;
+    font-size: 30px;
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+    margin: 0 10px 0 5px;
+    line-height: 38px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: .3s;
+}
+.footer ul li a:hover{
+    background: white;
+}
